@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Drawer</title>
+    <style>
+        .mini-card-grid {
+            scrollbar-color: #666 #201c29;
+            scrollbar-gutter: always;
+            padding: 3rem 0 3rem 2rem;
+            margin: auto;
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            width: 600px;
+            /* max-width: fit-content; */
+            background-color: #666;
+        }
+
+        /* Add vendor prefixes for better browser compatibility */
+        .mini-card-grid::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .mini-card-grid::-webkit-scrollbar-track {
+            background: #201c29;
+        }
+
+        .mini-card-grid::-webkit-scrollbar-thumb {
+            background-color: #666;
+            border-radius: 6px;
+            border: 3px solid #201c29;
+        }
+
+        .mini-card {
+            width: 200px; /* Set fixed width */
+            height: 280px; /* Set fixed height */
+            box-shadow: -2rem 0 3rem -2rem #000;
+            padding: 1.5rem;
+            border-radius: 16px;
+            background: linear-gradient(85deg, #434343, #262626);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            transition: .2s;
+            margin-right: -100px; /* Overlap cards */
+            margin-right: -210px;
+            z-index: 1; /* Ensure hover effect works properly */
+            /* border: 2px solid blue; */
+            
+        }
+
+        .mini-card:hover {
+            /* transform: rotate(3deg); */
+            margin-right: 0; 
+            /* Remove margin on hover       */
+         
+            /* z-index: 2;   */
+        }
+        .mini-card:last-child{
+            transform: none;
+        }
+
+        /* Add border to parent container */
+        /* .mini-card-grid {
+        } */
+
+        .icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellowgreen;
+            /* align-items: center; */
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;       
+            align-items: center;
+            font-weight: bold;
+        }
+        .sample-card{
+            padding: 20px;
+            width: 300px;
+            height: fit-content;
+        }
+       
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="mini-card-grid">
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+        <div class="mini-card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci voluptate voluptatibus, sed, totam vitae illum inventore sequi odit obcaecati iure sit eveniet doloremque quod a voluptatem molestiae accusamus eius!</div>
+    </div>
+
+    <br><br><br>
+    <div class="mini-card-grid">
+        <!-- <div class="mini-card sample-card">
+            <div class="container">
+                <div class="icon"></div>
+                <div class="title">Content Title</div>
+            </div>
+        </div>        -->
+        <div class="mini-card sample-card">
+            <div class="container">
+                <div class="icon"></div>
+                <div class="title">Upload Firmware</div>
+            </div>
+        </div>
+        <div class="mini-card sample-card">
+            <div class="container">
+                <div class="icon"></div>
+                <div class="title">Upload Language</div>
+            </div>
+        </div>
+        <div class="mini-card sample-card">
+            <div class="container">
+                <div class="icon"></div>
+                <div class="title">Upload System Audio</div>
+            </div>
+        </div>
+        <div class="mini-card sample-card">
+            <div class="container">
+                <div class="icon"></div>
+                <div class="title">Upload Advertisement</div>
+            </div>
+        </div>
+    </div> 
+
+
+</body>
+</html>
+
+
